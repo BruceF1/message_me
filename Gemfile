@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
+gem 'bcrypt', '~> 3.1', '>= 3.1.16'
+#The gem for better console view(use Hirb.enable to make it work)
+gem 'hirb', '~> 0.7.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
