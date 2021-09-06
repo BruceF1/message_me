@@ -1,19 +1,19 @@
-<h2 class="ui header interface">
-  <%= image_tag "m.JPG" %>
+<div class="ui container pane">
+  <!-- <%= image_tag "m.JPG" %> -->
     <h3> Message Me App</h3>
-    <div class="sub header inverted">Keep in contact with Message me</div>
-</h2>
+    <p>Keep in contact with Message me</p>
+</div>
 
-  <div class="ui two column grid interface">
-    <div class="twelve wide column inverted ">
-        <div class="ui card chatbox ">
-          <div class="content" id="messages">
-            <div class="ui feed" id="message_container">
-            <%= render @messages %>
+<div class="ui two column grid pane">
+  <div class="twelve wide column ">
+      <div class="ui card chatbox transparent_background ">
+        <div class="content" id="messages">
+          <div class="ui feed " id="message_container">
+          <%= render @messages %>
           </div>
         </div>
-        <div class ="extra content"></div>
-        <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %>
+        <div class ="extra content">
+          <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %>
             <div class="field">
               <div class="ui fluid icon input">
                 <%= f.text_field :body %>
@@ -21,27 +21,24 @@
               </div>
             </div>
           <% end %>
-      </div>
+        </div>
     </div>
-
-
-
-<div class="four wide column">
-  <div class="ui card chatbox">
-    <div class="content">
-      <div class="ui inverted vertical menu">
-        <a class="active item">
-          Home
-        </a>
-        <a class="item">
-          Messages
-        </a>
-        <a class="item">
-          Friends
-        </a>
+  </div>
+  <div class="four wide column ">
+    <div class="ui card chatbox ">
+      <div class="content">
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
 </div>

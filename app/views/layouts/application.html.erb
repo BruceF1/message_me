@@ -8,13 +8,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-<div class="interface">
-  <body>
+  <body class = "ui container appbackground">
     <%= render "layouts/navigation" %>
-    <div class="ui container interface">
+    <div class="ui container  ">
       <%= render "layouts/messages" %>
     <%= yield %>
     </div>
   </body>
-  </div>
 </html>
