@@ -1,5 +1,17 @@
 @import 'semantic-ui';
 
+h3, h2, h1{
+    font-family: 'Exo 2', sans-serif;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.full-width{
+  width:100%
+}
+
 .appbackground {
   background: rgb(117,166,119);
   background: -moz-linear-gradient(165deg, rgba(117,166,119,1) 0%, rgba(3,36,0,1) 48%, rgba(0,0,0,1) 100%);
@@ -8,6 +20,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#75a677",endColorstr="#000000",GradientType=1);
 }
 
+.summary {
+  color: white !important;
+}
 .pane {
   color:white;
   padding: 10px;
@@ -41,6 +56,7 @@
 #messages {
   height: 15em ;
   overflow: auto;
+  color: white;
 }
 
 .input {
@@ -51,7 +67,7 @@
 
 .ui.card,
 .ui.cards>.card {
-  color: white ;
+  color: #FFF ;
   padding: 10px;
   background-color:rgba(0, 0, 0, 0.1);
   border: 0;
