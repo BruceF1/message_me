@@ -14,17 +14,40 @@ p{
     padding: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
-    border: 1px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 13px;
     background-color: rgba(0, 0, 0, 0.1);
   }
 
+.ui.menu .item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .appbackground {
-  background: rgb(117,166,119);
-  background: -moz-linear-gradient(165deg, rgba(117,166,119,1) 0%, rgba(3,36,0,1) 48%, rgba(0,0,0,1) 100%);
-  background: -webkit-linear-gradient(165deg, rgba(117,166,119,1) 0%, rgba(3,36,0,1) 48%, rgba(0,0,0,1) 100%);
-  background: linear-gradient(165deg, rgba(117,166,119,1) 0%, rgba(3,36,0,1) 48%, rgba(0,0,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#75a677",endColorstr="#000000",GradientType=1);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 300s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .summary {
@@ -34,7 +57,7 @@ p{
   color:white;
   padding: 10px;
   margin-bottom: 25px;
-  border: 1px solid rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .4);
   border-radius: 13px;
   background-color:rgba(0, 0, 0, 0.1);
 
@@ -61,6 +84,7 @@ p{
 }
 
 #messages {
+  font-family: 'Montserrat', sans-serif;
   height: 15em ;
   overflow: auto;
   color: white;
