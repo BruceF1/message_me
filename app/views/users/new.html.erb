@@ -1,31 +1,30 @@
 <div class="container">
-<div class="ui center aligned basic segment">
-  <div class="column">
-      <%= form_for(@user, html: {class: "ui form", role: "form"}, url: signup_path) do |f| %>
-        <div class="field">
-          <label>Username</label>
-          <div class="ui left icon input">
-            <%= f.label :username, "Username" %>
-            <i class="user icon"></i>
-             <%= f.text_field :username, placeholder: "Username" %>
+   <div class="ui center aligned basic segment">
+    <div class="column">
+      <div class="ui column grid ">
+        <div class="ui fluid card chatbox">
+          <div class ="extra content">
+            <div class ="footer"><strong> Welcome to !YAP the chat app.</strong>
+              <p> Please fill out the form below to register. </p>
+            </div>
+            <%= form_for(:user, html: {class: "ui form", role: "form"}, url: signup_path) do |f| %>
+                <div class="field">
+                  <div class="ui left icon input">
+                    <%= f.text_field :username, placeholder: "Please enter your username" %>
+                    <i class="user icon"></i>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui left icon input">
+                    <%= f.password_field :password, placeholder: "Please enter your password" %>
+                    <i class="lock icon"></i>
+                  </div>
+                </div>
+                    <%= f.button "Signup", class: "ui pane submit button" %>
+                    <% end %>
+              </div>
           </div>
         </div>
-        <div class="field">
-          <%= f.label :password, "Password" %>
-          <div class="ui left icon input">
-            <%= f.password_field :password, placeholder: "Password" %>
-            <i class="lock icon"></i>
-          </div>
-        </div>
-        <%= f.button "Sign up", class: "ui teal labeled icon button " %>
-        <% end %>
       </div>
     </div>
-  <div class="ui horizontal divider inverted">
-    Or
   </div>
-  <div class="ui orange submit button">
-    Login
-
-  </div>
-</div>
