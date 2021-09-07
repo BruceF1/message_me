@@ -41,6 +41,20 @@ p{
   }
 }
 
+.padding_sides {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.featured-content {
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
 .footer {
   font-family: 'Montserrat', sans-serif;
   color:white;
@@ -53,6 +67,7 @@ p{
 .summary {
   color: white !important;
 }
+
 .pane {
   color:white;
   padding: 10px;
@@ -81,6 +96,13 @@ p{
   border-color:#a59457 ;
   background-color: black ;
   color: white ;
+}
+
+.chat-usernames {
+  font-family: 'Montserrat', sans-serif;
+  color: cyan ;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 #messages {
