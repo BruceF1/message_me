@@ -20,14 +20,16 @@
   </div>
   <div class="four wide column ">
     <div class="ui card chatbox ">
-      <div class="content">
+      <div class="content " id="messages">
         <div class="ui secondary vertical menu">
           <a class="active item">
             Chatroom
           </a>
-          <a class="item">
-            Channels
-          </a>
+            <% @users.each do |user| %>
+            <a class="item chat-userslist">
+            <p><%= user.username %></p>
+            </a>
+            <% end %>
         </div>
       </div>
     </div>
