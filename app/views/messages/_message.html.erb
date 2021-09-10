@@ -1,8 +1,9 @@
 <div class="event">
-  <div class="content">
-    <div class="summary">
+  <div class="content fade-in-text">
+    <div class="summary  ">
     <span class="chat-usernames"><%= message.user.username %>:</span>
-    <p><%= message.body %></p>
+    <class="chat-text"><%= message.body %>
+    <br>
     <small><%= message.created_at.strftime("%b %e, %l:%M %p") %></small>
   </div>
 </div>

@@ -22,11 +22,9 @@
     <div class="ui card chatbox ">
       <div class="content " id="messages">
         <div class="ui secondary vertical menu">
-          <a class="active item">
-            Chatroom
-          </a>
+            <h3>Yappers:</h3>
             <% @users.each do |user| %>
-            <a class="item chat-userslist">
+            <a class=" chat-userslist">
             <p><%= user.username %></p>
             </a>
             <% end %>
